@@ -1,0 +1,41 @@
+{
+    "name": "ejetar/laravel-environment",
+    "description": "\uD83D\uDCC2 Load a custom .env file according to your environment.",
+    "homepage": "https://ejetar.com/projects/laravel-environment",
+    "version": "0.1.0",
+    "readme": "readme.md",
+    "time": "YYYY-MM-DD HH:MM:SS",
+    "type": "library",
+    "licence": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Almeida Girardi",
+            "email": "guilhermeagirardi@gmail.com",
+            "homepage": "https://guilhermegirardi.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ejetar/laravel-environment/issues"
+    },
+    "keywords": [
+        "php",
+        "env",
+        ".env",
+        "dotenv",
+        "environment",
+        "local",
+        "development",
+        "dev",
+        "production",
+        "laravel"
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ejetar\\LaravelEnvironment\\": "src/"
+        }
+    }
+}
