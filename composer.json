@@ -4,7 +4,6 @@
     "homepage": "https://ejetar.com/projects/laravel-environment",
     "version": "0.1.0",
     "readme": "readme.md",
-    "time": "YYYY-MM-DD HH:MM:SS",
     "type": "library",
     "licence": "MIT",
     "authors": [
