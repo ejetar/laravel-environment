@@ -23,15 +23,15 @@ Laravel Environment is a library designed to be used in conjunction with Laravel
 
 There are currently 3 methods:
 ```php
-\Ejetar\LaravelEnvironment::fromSystemEnvironmentVariable($system_environment_variable_name, $default_value = 'local')
+\Ejetar\LaravelEnvironment\LaravelEnvironment::fromSystemEnvironmentVariable($system_environment_variable_name, $default_value = 'local')
 //Loads an environment file according to the value of a system environment variable
 ```
 ```php
-\Ejetar\LaravelEnvironment::fromFile($filename)
+\Ejetar\LaravelEnvironment\LaravelEnvironment::fromFile($filename)
 //Loads an environment file explicitly, stating the file path
 ```
 ```php
-\Ejetar\LaravelEnvironment::fromCustomMethod(Callable $callable)
+\Ejetar\LaravelEnvironment\LaravelEnvironment::fromCustomMethod(Callable $callable)
 //Enables the user to enter a custom method for loading the environment file
 ```
 
@@ -79,7 +79,7 @@ We assume in this example that the system environment variable MYAPP_ENV does no
 ##### First example
 Loading the server IP-based environment file:
 ```php
-\Ejetar\LaravelEnvironment::fromCustomMethod(function(){
+\Ejetar\LaravelEnvironment\LaravelEnvironment::fromCustomMethod(function(){
   switch($_SERVER['SERVER_ADDR']) {
     case '1.2.3.4':
       return '.env.local';
